@@ -1,0 +1,8 @@
+services:
+  cron-test:
+    container_name: cron-test
+    image: cron-test
+    restart: unless-stopped
+    volumes:
+      - .:/folder
+
